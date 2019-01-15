@@ -68,6 +68,25 @@ div#wrapper {
 }
 
 /* ========================================
+		スクロールバー用
+========================================= */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fff;
+	border-left: solid 1px #ececec;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 10px;
+	box-shadow: inset 0 0 0 2px #fff;
+}
+
+/* ========================================
 		ヘッダー用
 ========================================= */
 
@@ -145,14 +164,15 @@ div#mainimage {
 
 div#left {
 	width: 555px;
-	height: 178px;
+	height: auto;
 	background-color: #fff;
 	float: left;
 	margin-right: 20px;
 	padding: 10px;
 }
 
-div#left h2 {
+div#left h2,
+div#left h3 {
 	font-size: 17px;
 	font-weight: bold;
 	color: #734339;
@@ -234,3 +254,41 @@ footer {
 	line-height: 58px;
 }
 
+/* ========================================
+		メニュー一覧
+========================================= */
+
+h2#heading {
+	background: url(images/title.jpg);
+	width: 925px;
+	height: 70px;
+	border: 5px solid #fff;
+	margin-bottom: 20px;
+	font-size: 27px;
+	font-weight: bold;
+	color: #2f5734;
+	line-height: 70px;
+	padding-left: 23px;
+}
+
+div#left dl {
+	margin-top: 11px;
+}
+
+div#left dl dt {
+	font-size: 15px;
+	font-weight: normal;
+	color: #734339;
+}
+
+div#left dl dd {
+	font-size: 13px;
+	font-weight: normal;
+	color: #927e7a;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+div#left dl dd:last-child {
+	margin-bottom: 0;
+}
